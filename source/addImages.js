@@ -9,12 +9,12 @@ inter = setInterval(function() {
 			var wrap = document.getElementById("wrap"); 
 			var clockBox = document.getElementById("clock-box"); 
 			var divs = document.createElement("div")
-			divs.style.height = "500px"
+			divs.style.height = "450px"
 			divs.style.width = "350px"
 			divs.style.overflow = "auto"
-			divs.style.display = "inline-block";
-			divs.style.marginLeft = "50px"
-			divs.style.marginTop = "50px"
+			divs.style.position = "absolute";
+			divs.style.left = "50px"
+			divs.style.top = "50px"
 			for(var i=1;i<25;i++) {
 				(function(index){
 					if (index == 24) {
